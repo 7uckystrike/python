@@ -2,8 +2,8 @@ import random
 
 print('가위바위보 게임을 시작합니다!')
 game = ['가위', '바위', '보']
-count = 0 #게임을 진행한 총 횟수를 세는 변수
-win = 0 #여러분이 이긴 횟수를 세는 변수
+count = 0 
+win = 0 
 
 while 1 :
 	computer = random.choice(game)
@@ -17,7 +17,6 @@ while 1 :
 	print('컴퓨터: ' + computer)
 	print('나: ' + answer)
 
-	#만약 컴퓨터가 가위를 냈다면
 	if computer == '가위' :
 		if answer == '가위' :
 			print('비겼다!')
